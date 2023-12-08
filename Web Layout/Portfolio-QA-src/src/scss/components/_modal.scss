@@ -1,0 +1,151 @@
+.modal {
+  padding: 10px;
+
+  .graph-modal {
+    &::before {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &__container {
+      padding: 20px 40px;
+
+      @include mobile {
+        padding: 20px;
+      }
+
+      &--last-slide-bg {
+        border: 3px solid var(--aqua);
+        background-image: url(../img/events@1920-pic-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__content {
+      margin: 0;
+
+      &--last-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__close {
+      top: 10px;
+      right: 5px;
+      width: 35px;
+      height: 35px;
+      outline: none;
+
+      @include mobile {
+        right: 7px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 940px;
+    min-height: 200px;
+    margin: 0;
+
+    &__title--last-slide {
+      padding: 3px;
+      font-weight: normal;
+      color: white;
+      letter-spacing: 3px;
+      background: linear-gradient(to top left, aqua, #ed61b8);
+    }
+
+    &__btn-icon {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    &__text-descr {
+      margin-bottom: 20px;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__figma {
+      color: var(--aqua);
+      transition: color .3s ease;
+
+      @include hover {
+        &:not(:focus):not(:active) {
+          color: var(--dark);
+          transition: color .3s ease;
+        }
+      }
+
+      &:focus-visible:not(:hover):not(:active) {
+        outline: 1px solid var(--aqua);
+        outline-offset: 3px;
+      }
+
+      &:active {
+        color: var(--rose);
+        transition: color .3s ease;
+      }
+    }
+
+    &__link {
+      position: relative;
+      margin-bottom: 10px;
+      padding-right: 45px;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--aqua);
+      transition: color .3s ease;
+
+      @include mobile {
+        font-size: 15px;
+        line-height: 19px;
+      }
+      @include hover {
+        &:not(:focus):not(:active) {
+          color: var(--dark);
+          transition: color .3s ease;
+        }
+      }
+
+      &:focus-visible:not(:hover):not(:active) {
+        outline: 1px solid var(--aqua);
+        outline-offset: 3px;
+      }
+
+      &:active {
+        color: var(--rose);
+        transition: color .3s ease;
+      }
+    }
+
+    &__link-icon {
+      position: absolute;
+      top: 6px;
+      width: 35px;
+      height: 15px;
+      margin-left: 10px;
+
+      -o-object-fit: cover;
+         object-fit: cover;
+      fill: var(--aqua);
+      @include mobile {
+        top: 7px;
+        width: 25px;
+        height: 10px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

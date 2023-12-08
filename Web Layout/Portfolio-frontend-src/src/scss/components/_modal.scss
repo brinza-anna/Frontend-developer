@@ -1,0 +1,143 @@
+.modal {
+padding: 10px;
+
+  .graph-modal {
+    &::before {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &__container {
+      padding: 20px 40px;
+
+      @include mobile {
+        padding: 20px;
+      }
+    }
+
+    &__content {
+      margin: 0;
+    }
+
+&__close {
+  right: 5px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+ outline: none;
+
+  @include mobile {
+    right: 7px;
+    width: 15px;
+    height: 15px;
+
+  }
+}
+  }
+
+
+.modal-content {
+  margin: 0;
+  width: 100%;
+  max-width: 940px;
+
+
+  &__btn-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  &__img{
+margin-bottom: 30px;
+width: 100%;
+border-radius: 20px;
+
+@include mobile {
+margin-bottom: 10px;
+}
+  }
+
+  &__text-descr {
+margin-bottom: 20px;
+
+@include mobile {
+  margin-bottom: 10px;
+}
+  }
+
+  &__figma {
+    color: var(--aqua);
+    transition: color .3s ease;
+    @include hover {
+      &:not(:focus):not(:active) {
+        color: var(--dark);
+        transition:  color 0.3s ease;
+      }
+    }
+
+    &:focus-visible:not(:hover):not(:active) {
+      outline: 1px solid var(--aqua);
+      outline-offset: 3px;
+    }
+
+    &:active {
+      color: var(--rose);
+      transition:  color 0.3s ease;
+    }
+
+  }
+
+  &__link {
+    position: relative;
+    padding-right: 45px;
+    font-size: 25px;
+    color: var(--aqua);
+transition: color .3s ease;
+
+
+@include mobile {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+  @include hover {
+    &:not(:focus):not(:active) {
+      color: var(--dark);
+      transition:  color 0.3s ease;
+    }
+  }
+
+  &:focus-visible:not(:hover):not(:active) {
+    outline: 1px solid var(--aqua);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    color: var(--rose);
+    transition:  color 0.3s ease;
+  }
+  }
+
+  &__link-icon {
+    width: 35px;
+    height: 15px;
+    top: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 10px;
+    fill: var(--aqua);
+
+    @include mobile {
+      width: 25px;
+      height: 10px;
+      top: 7px;
+      margin-left: 5px;
+    }
+   }
+}
+}

@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 70px;
+  min-height: 40px;
+  margin-right: 5px;
+
+  &__span {
+    font-size: 30px;
+    line-height: 35px;
+
+    &--b {
+      color: var(--aqua);
+    }
+
+    &--a {
+      color: var(--rose);
+    }
+  }
+}

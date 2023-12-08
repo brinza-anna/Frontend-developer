@@ -1,0 +1,105 @@
+.tabs {
+
+&__nav {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--tab-gap) * 2);
+
+
+  @include mobile{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    margin-bottom: 0;
+  }
+  }
+
+&__nav-item {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  font-family: "Gilroi";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+
+  @include mobile {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    }
+
+
+  &:not(:last-child) {
+    &::after {
+  content: '';
+  position: absolute;
+  right: calc(-1 * var(--tab-gap));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray);
+    }
+    }
+}
+
+&__nav-btn {
+
+
+  &--active {
+    outline: none;
+    color: var(--rose);
+    background-color: transparent;
+  }
+
+  &:focus {
+    color: var(--rose);
+    background-color: transparent;
+  }
+
+    @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+    .tabs-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @include small-tablet{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+            &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+        &__svg {
+          margin-bottom: 30px;
+
+          @include mobile {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+          }
+        }
+
+        &__name {
+          font-size: 20px;
+          color: var(--aqua);
+
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+      }
+
+    }

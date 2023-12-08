@@ -1,0 +1,20 @@
+:root {
+  // base
+  --font-family: "Gilroy", sans-serif;
+
+  --content-width: 944px;
+  --content-fluid-width: 1445px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --tab-gap: 10px;
+  // colors
+  --white: #ffffff;
+  --dark: #070707;
+  --gray: #828282;
+  --gray-light: #f6f6f6;
+  --red: #d52027;
+  --aqua: #61edce;
+  --rose: #ed61b5;
+  --text-color: rgba(20, 16, 36, .7);
+}

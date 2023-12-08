@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--dark);
+
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+
+    &--mail {
+      margin-bottom: 30px;
+    }
+  }
+
+  .input-textarea {
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+.just-validate-error-label {
+    margin-bottom: 2px;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--rose) !important;
+  }
+
+  .just-validate-error-field {
+    border: 1px solid var(--rose);
+  }
+
+  &__input {
+    border-radius: 5px;
+    border: 1px  solid var(--gray-light);
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    color: var(--dark);
+    outline: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &::placeholder {
+      opacity: 1;
+       transition: opacity 0.3s ease;
+      color: var(--dark);
+    }
+
+@include hover {
+  background-color: rgba(102, 102, 102, 0.5);
+  color: var(--white)
+}
+
+&:focus {
+  background-color: var(--dark);
+  color: var(--white);
+
+  &:focus::placeholder {
+    opacity: 0;
+     transition: opacity 0.3s ease;
+  }
+    }
+  }
+
+  &__btn {
+    padding: 18px 30px;
+    background-color: var(--aqua);
+    border-radius: 20px;
+  }
+}

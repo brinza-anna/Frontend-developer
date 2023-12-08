@@ -1,0 +1,26 @@
+.about {
+  padding: 35px 0;
+  background-color: var(--gray-light);
+  background-image: url(../img/gallery-bg@1024.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+  &__descr-wrap {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+  &__text {
+    color: var(--white);
+  }
+}

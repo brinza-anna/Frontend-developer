@@ -1,0 +1,60 @@
+.tooltips {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border: 1px solid var(--aqua);
+  border-radius: 100%;
+  background-color: var(--white);
+
+  @include mobile {
+    width: 15px;
+    height: 15px;
+  }
+
+  &:focus-visible {
+    border: 2px solid red($color: #000000);
+  }
+}
+
+.tippy-box[data-theme~="about-tooltips"] {
+  padding: 5px;
+  color: var(--rose);
+  background-color: var(--white);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.tippy-content[data-theme~="about-tooltips"] {
+  border-radius: 0;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="top"] > .tippy-arrow::before {
+  border-top-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="bottom"] > .tippy-arrow::before {
+  border-bottom-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="left"] > .tippy-arrow::before {
+  border-left-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="right"] > .tippy-arrow::before {
+  border-right-color: var(--dark);
+}

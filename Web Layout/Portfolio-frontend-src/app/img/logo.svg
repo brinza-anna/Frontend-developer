@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAoCAYAAACo5zetAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO1SURBVGhD7Zmxb9pAFMb7rzKwsGTpkiVzFhaWLlm6sHRNVaFKqApDGRqSoCAiIFFQmoQUsI2NY2MsfT2bs3o+n8FnjJf6J72F57Pw57vvvTt/QEGEQhQBhSgCClEEFKIIKEQRUIgiYIcoT6jNOyiliMr8CsdKD58XY4xsh94vW9zuT8xLTega/SEjEs4UB9pyiFP+4ZUhRpYOc00v81ib0N4naGhdHDHXlpU+2laW4tgwql+JKCTqr/S3bJBaPo5+GxZFfaKZGOwJ6gpzPZk9n4wlTe6Jdg3FE8SLyk9kdFcfOU8xB6G3v1MUD/cNdXbMvItzi51a6XivNzaC0FDbNs3sj5wo1hDH7AMmEcVjeUc8hhmnPGA/G3iEVvkniB/VHlnk2ZCPKOBnyy2ae7xYu9kMC+JHdoabkyhrtFVmHImaQVPSvEL76IlwAb15ERYmI8PNSRTgMiNRNmWYCHD2CJdfRhkZbk6i6GiGqlCHVCGakiIoww1o480v5gEMNx9RnDGq7DjiKa00rhiU4ZNrIg9l/CskSiiXklxE0fQuIwjpdrUJzcgRlOHwbFhAP2FEYWZRWg4uirkc4IQdM+/jckWTUlD/EPiG0+YN95lm0rGnKOSP2makP3BWOqbmGOfqDcrM9WVlgFEqQZgHF1aYbA13P1ESxxVq+gwmvY08wRK5gBHjRVl2uHvPFMeluQDXgmnP0NeHqHEVpzS/QVV7wlS2yw/M1C/DMWRouAf2lDUc8z66u5byFRfLs2/kQXcZaHaGe3Cj9VkJzmWUIV5iXzuD04ea8M1HDHfbzNpCPqIQHKMXFoVE1bBoNh67IdrnJI14D9pGbqLA/Y0zdqw/ftf8pvsciWrCG67SXNBMcvITBRZa3P7HX0I0K2J7GY6BPXzyIoXh5ihKdFNYUu4xpbkogXHKHgnY0INjSj/kDTdHUWb4wpXore1+kjIcw76Gm58o/FjSs9TfaS5C0jIcB38y9wO6ROcoJ0qaM1oPd4ZzfpaQsbGF4aWz8YXjDnGidPBHCjKzRUoUfrebSJS1Qgz2KjSuojxs6VH+YBE0YbVRqj7DY80vodJ3LBI1RolF8b778LtdEsodWsYbpvYy3O57336sN7QXPW7JXOF0MYEm/G82VuMHaKfesgkepAG19QzLlGk2HHIf0vD5R5Z8bO5nR/YmYXaIkv4LoRdlIsLRvIuqOkCDiKdt2fMYNdFDMEFmzW5Gm+43QaiXdIgAOU/5TyhEEVCIIqAQRUAhioBClAjAX7gxZcJwNUxjAAAAAElFTkSuQmCC" id="svg_1" height="40" width="69" y="280" x="365.5"/>
+ </g>
+</svg>

@@ -1,0 +1,11 @@
+.skills {
+
+  &__descr {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+}

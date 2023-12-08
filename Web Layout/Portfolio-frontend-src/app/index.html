@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Portfolio Frontend-developer: Brinza Anna</title>
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a class="logo"><span class="logo__span logo__span--b">-B</span><span class="logo__span logo__span--a">A-</span>
+    </a>
+    <nav class="nav" title="main menu" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#about-me" class="nav__link  link" data-menu-item data-scroll>About me</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link  link" data-menu-item data-scroll>Skills</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link  link" data-menu-item data-scroll>Projects</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link  link" data-menu-item data-scroll>Contacts</a></li>
+      </ul>
+      <button class="btn-reset burger-close btn" aria-label="close menu" data-menu-close>
+        <svg class="burger-close__icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </nav>
+    <button class="btn-reset burger btn" aria-label="Open menu" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title"><span class="hero__name">Brinza</span><span class="hero__name">Anna</span></h1>
+      <img class="hero__svg" src="img/computer.svg" alt="computer icon" loading="lazy" width="120" height="100">
+      <span class="hero__descr text">
+        frontend- developer from Chishinau, Moldova
+      </span>
+    </div>
+    <div class="hero__slider">
+      <div class="swiper-wrapper">
+        <div class="hero__slide hero__slide--1  swiper-slide"></div>
+        <div class="hero__slide hero__slide--2  swiper-slide"></div>
+        <div class="hero__slide hero__slide--3  swiper-slide"></div>
+        <div class="hero__slide hero__slide--4  swiper-slide"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about" id="about-me">
+  <div class="container">
+    <h2 class="section-title">About me</h2>
+    <div class="about__descr-wrap">
+      <p class="about__descr text">
+        Hi, I’m Anna
+        <button class="about__tooltips-btn btn tooltips js-tooltip-btn btn-reset" data-tippy-content="Biginner, but promising specialist :)" aria-label="Дополнительная информация">i</button> from Chishinau.
+        And i’m interested in weblayout and everything connected with it.
+      </p>
+      <p class="about__descr text">I have completed the course «Weblayout» at Skillbox.</p>
+      <p class="about__descr text">Ready to implement excellent projects with wonderful people.
+        <button class="about__tooltips-btn  btn tooltips js-tooltip-btn btn-reset" data-tippy-content="Surely it's You ;)" aria-label="Дополнительная информация">i</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="skills section-offset" id="skills">
+  <div class="skills__container container">
+    <h2 class="skills__title section-title">Skills</h2>
+    <p class="skills__descr text">In my work I use such programs and practices</p>
+    <div class="tabs" data-tabs="skills">
+      <ul class="tabs__nav list-reset">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn link tabs__nav-btn--active btn-reset" type="button">Programs</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn link btn-reset" type="button">Skills</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn link btn-reset" type="button">Tools</button></li>
+      </ul>
+
+      <div class="tabs__content">
+
+        <div class="tabs__panel">
+          <ul class="tabs-content list-reset">
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/figma.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">Figma</span>: Disign platform for help front-end developers</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/vsc.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">VS Code</span>: Code editor</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/gitlab.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">GitLab</span>: Internet hosting for developers</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/github.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">GitHub</span>: Internet hosting for developers</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel">
+          <ul class="tabs-content list-reset">
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/html.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">Html 5</span>: Advanced level</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/css.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">CSS</span>: Advanced level</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/scss.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">SCSS</span>: Practice in work</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/js.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">Java Script</span>: Basic level</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel">
+          <ul class="tabs-content list-reset">
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/bem.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">BEM_</span>: Methodology for organizing and naming css</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/gulp.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">Gulp</span>: Toolkit for help automate tasks</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/pp.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">PerfectPixel</span>: Extention for develop websits accuracy</p>
+            </li>
+            <li class="tabs-content__item">
+              <img loading="lazy" src="img/bootstrap.svg" class="tabs-content__svg" width="80" height="80" alt="figma icon">
+              <p class="tabs-content__descr text"><span class="tabs-content__name">Bootstrap</span>: Framework for front-end developers </p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="projects section-offset" id="projects">
+  <div class="projects__container container">
+    <h2 class="section-title">My projects</h2>
+    <p class="projects__descr text">For more information about project click on respective slide</p>
+  </div>
+
+  <div class="projects__wrapper container-fluid">
+    <div class="projects__slider js-projects-slides">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide projects__slide" href="#" aria-label="slide 1" data-graph-path="projects-pic-1">
+          <img loading="lazy" src="img/Blanchar-1.jpeg" class="projects__img" width="300" height="300" alt="Blanchar picture">
+        </a>
+        <a class="swiper-slide projects__slide" href="#" aria-label="slide 2" data-graph-path="projects-pic-2">
+          <img loading="lazy" src="img/Robo.School-1.jpeg" class="projects__img" width="300" height="300" alt="robo school picture">
+        </a>
+        <a class="swiper-slide projects__slide" href="#" aria-label="slide 3" data-graph-path="projects-pic-3">
+          <img loading="lazy" src="img/Skillbox-1.jpeg" class="projects__img" width="300" height="300" alt="skillbox school picture">
+        </a>
+        <a class="swiper-slide projects__slide" href="#" aria-label="slide 4" data-graph-path="projects-pic-4">
+          <img loading="lazy" src="img/portfolio-qa-jpg.jpg" class="projects__img" width="300" height="300" alt="portfolio picture">
+        </a>
+
+      </div>
+    </div>
+    <div class="projects__nav">
+      <button class="projects__nav-btn btn nav-btn btn-reset js-projects-prev" aria-label="to previous">
+        <svg class="projects__nav-icon">
+          <use xlink:href="img/sprite.svg#prev"></use>
+        </svg>
+      </button>
+      <button class="projects__nav-btn btn nav-btn btn-reset js-projects-next" aria-label="to next">
+        <svg class="projects__nav-icon">
+          <use xlink:href="img/sprite.svg#next"></use>
+        </svg>
+      </button>
+      <div class="projects__pagination js-projects-pagination"></div>
+    </div>
+
+  </div>
+
+</section>
+
+      <section id="contacts" class="contacts section-offset">
+  <div class="container contacts__container">
+    <h2 class="contacts__title section-title"> Contacts </h2>
+    <p class="contacts__descr text">Want to know more or chat? You are welcome! </p>
+    <div class="contacts__wrap">
+      <div class="contacts__left">
+        <form class="form contacts__form" action="#">
+          <label class="form__label">
+            <input class="input-reset form__input input-name" name="Имя" type="text" placeholder="*Name">
+          </label>
+          <label class="form__label form__label--mail">
+            <input class="input-reset form__input input-email" name="E-mail" type="email" placeholder="*E-mail">
+          </label>
+          <textarea class="input-reset form__input input-textarea" name="text" placeholder="Leave your message"></textarea>
+          <button class="btn-reset btn btn btn--fill form__btn">Send message</button>
+        </form>
+      </div>
+      <div class="contacts__right">
+        <h3 class="contacts__subtitle subtitle">Contact me in one click</h3>
+        <ul class="contacts__list-mesanger list-reset">
+          <li class="contacts__item">
+            <a class="contacts__link opacity" href="https://msng.link/o/?37379194302=wa" aria-label="watsapp link" target="_blank">
+              <svg class="whatsap contacts__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"></path>
+                <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link opacity" href="https://t.me/brinza_anna" aria-label="telegramm link" target="_blank">
+              <svg class="telegram contacts__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear_136320_63)"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_136320_63" x1="20" y1="0" x2="20" y2="39.7033" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2AABEE"></stop>
+                    <stop offset="1" stop-color="#229ED9"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link opacity" href="https://msng.link/o/?37379194302=vi" aria-label="viber link" target="_blank">
+              <svg id="Social_Icons" enable-background="new 0 0 128 128" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="_x34__stroke">
+                  <g id="Viber_1_">
+                    <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"></rect>
+                    <path id="Viber" clip-rule="evenodd" d="M71.4,44.764c2.492,0.531,4.402,1.478,6.034,3.006    c2.1,1.983,3.251,4.383,3.757,7.831c0.342,2.248,0.202,3.132-0.595,3.865c-0.746,0.682-2.125,0.707-2.96,0.063    c-0.607-0.455-0.797-0.935-0.936-2.236c-0.164-1.731-0.468-2.943-0.987-4.067c-1.113-2.387-3.074-3.625-6.388-4.029    c-1.556-0.19-2.024-0.366-2.53-0.96c-0.924-1.099-0.569-2.88,0.708-3.537c0.481-0.24,0.683-0.265,1.746-0.202    C69.908,44.536,70.882,44.65,71.4,44.764z M68.706,35.227c7.679,1.124,13.624,4.686,17.521,10.471    c2.189,3.259,3.555,7.086,4.023,11.191c0.164,1.503,0.164,4.244-0.013,4.699c-0.165,0.429-0.696,1.01-1.151,1.25    c-0.493,0.253-1.543,0.227-2.125-0.076c-0.974-0.493-1.265-1.276-1.265-3.398c0-3.271-0.848-6.72-2.315-9.398    c-1.67-3.057-4.099-5.583-7.059-7.339c-2.543-1.516-6.3-2.64-9.728-2.918c-1.24-0.101-1.923-0.354-2.391-0.897    c-0.721-0.821-0.797-1.933-0.19-2.855C64.67,34.937,65.682,34.772,68.706,35.227z M38.914,27.434    c0.443,0.152,1.126,0.505,1.518,0.758c2.403,1.592,9.095,10.143,11.284,14.412c1.252,2.438,1.67,4.244,1.278,5.583    c-0.405,1.44-1.075,2.198-4.074,4.61c-1.202,0.972-2.328,1.97-2.505,2.236c-0.455,0.657-0.822,1.945-0.822,2.855    c0.013,2.109,1.379,5.937,3.175,8.88c1.391,2.286,3.883,5.216,6.35,7.465c2.897,2.653,5.452,4.459,8.337,5.886    c3.707,1.844,5.971,2.311,7.628,1.541c0.417-0.19,0.86-0.442,0.999-0.556c0.126-0.114,1.101-1.301,2.163-2.615    c2.049-2.577,2.517-2.994,3.922-3.474c1.784-0.606,3.605-0.442,5.44,0.493c1.392,0.72,4.428,2.602,6.388,3.966    c2.581,1.806,8.096,6.303,8.843,7.2c1.315,1.617,1.543,3.688,0.658,5.975c-0.936,2.412-4.579,6.934-7.122,8.867    c-2.302,1.743-3.934,2.412-6.085,2.513c-1.771,0.088-2.505-0.063-4.769-0.998C63.76,95.718,49.579,84.805,38.32,69.811    c-5.882-7.831-10.361-15.953-13.422-24.378c-1.784-4.913-1.872-7.048-0.405-9.562c0.633-1.061,3.327-3.688,5.288-5.153    c3.264-2.425,4.769-3.322,5.971-3.575C36.574,26.966,38.004,27.105,38.914,27.434z M67.833,26.07    c4.352,0.543,7.868,1.591,11.727,3.474c3.795,1.857,6.224,3.613,9.437,6.808c3.011,3.019,4.681,5.305,6.452,8.854    c2.467,4.951,3.871,10.838,4.111,17.317c0.089,2.21,0.025,2.703-0.481,3.335c-0.961,1.225-3.074,1.023-3.795-0.354    c-0.228-0.455-0.291-0.846-0.367-2.615c-0.127-2.716-0.316-4.471-0.696-6.568c-1.493-8.223-5.44-14.791-11.74-19.503    c-5.25-3.941-10.677-5.861-17.786-6.278c-2.404-0.139-2.821-0.227-3.365-0.644c-1.012-0.796-1.063-2.665-0.089-3.537    c0.595-0.543,1.012-0.619,3.074-0.556C65.392,25.842,66.973,25.969,67.833,26.07z M64,0c35.346,0,64,28.654,64,64    s-28.654,64-64,64S0,99.346,0,64S28.654,0,64,0z" fill="#7F4DA0" fill-rule="evenodd"></path>
+                  </g>
+                </g>
+              </svg> </a>
+          </li>
+        </ul>
+        <div class="contacts__contacts">
+          <a class="contacts__contacts-link link link--text contacts__contacts-link--tel" href="tel:37379194302" target="_blank">+(373) 79-194-302</a>
+          <a class="contacts__contacts-link link link--text" href="mailto:brinza.anna3@gmail.com" target="_blank">brinza.anna3@gmail.com</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__left">
+      <a class="logo"><span class="logo__span logo__span--b">-B</span><span class="logo__span logo__span--a">A-</span>
+      </a>
+    </div>
+    <ul class="footer__social-list social list-reset">
+      <li class="social__item">
+        <a class="social__link  btn" href="https://www.linkedin.com/in/brinza-anna" aria-label="linkedin link" target="_blank">
+          <svg class="social__icon social__icon--linkedin">
+            <use xlink:href="img/sprite.svg#icons8-linkedin-black"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link btn" href="https://github.com/brinza-anna" aria-label="github link">
+          <svg class="social__icon social__icon--github">
+            <use xlink:href="img/sprite.svg#icons8-github-60"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link  btn" href="https://www.facebook.com/anna.brinza.5" aria-label="facebook link" target="_blank">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    <div class="modal graph-modal">
+
+  <div class="modal__container graph-modal__container" data-graph-target="projects-pic-1" role="dialog" aria-modal="true">
+    <div class="modal-content graph-modal__content">
+      <img class="modal-content__img" src="img/Blanchar-2.jpeg" alt="blanchard picture" loading="lazy" width="500" height="500">
+      <div class="modal-content__descr">
+        <button class="modal-content__btn-close sprite btn-reset js-modal-close graph-modal__close" aria-label="Close">
+          <svg class="modal-content__btn-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-content__title subtitle">Blanchard: picture gallery</h3>
+        <p class="modal-content__text text">Final course project- one page landing (CSS, Html, JS)</p>
+        <p class="modal-content__text-descr text">Figma responsive layout (Perfect-Pixel)
+          <a class="modal-content__figma link-modal" target="_blank" href="https://www.figma.com/file/FXCdg8Pu72IM1Zs2NV6iwJ/Blanchard?node-id=0%3A1">Figma layout of Blanchard</a>
+        </p>
+        <a class="modal-content__link link-modal" href="https://brinza-anna.github.io/Blanchard/" target="_blank">Blanchard site
+          <svg class="modal-content__link-icon">
+            <use xlink:href="img/sprite.svg#link-to"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container graph-modal__container" data-graph-target="projects-pic-2" role="dialog" aria-modal="true">
+    <div class="modal-content graph-modal__content">
+      <img class="modal-content__img" src="img/Robo.School-2.jpeg" alt="robo picture" loading="lazy" width="500" height="500">
+      <div class="modal-content__descr">
+        <button class="modal-content__btn-close btn-reset js-modal-close graph-modal__close" aria-label="Close">
+          <svg class="modal-content__btn-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-content__title subtitle">Robo: Advanced training courses</h3>
+        <p class="modal-content__text text">One page landing-test project (CSS, Html, JS, Gulp, Webpack, SCSS.)</p>
+        <p class="modal-content__text-descr text">Figma responsive layout
+          <a class="modal-content__figma link-modal" target="_blank" href="https://www.figma.com/file/TippzkL8D26gXLCTt0ZlEp/Robo">Figma layout of Robo</a>
+        </p>
+        <a class="modal-content__link link-modal" href="https://brinza-anna.github.io/Robo" target="_blank">Robo site
+          <svg class="modal-content__link-icon">
+            <use xlink:href="img/sprite.svg#link-to"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container graph-modal__container" data-graph-target="projects-pic-3" role="dialog" aria-modal="true">
+    <div class="modal-content graph-modal__content">
+      <img class="modal-content__img" src="img/Skillbox-2.jpeg" alt="skillbox picture" loading="lazy" width="500" height="500">
+      <div class="modal-content__descr">
+        <button class="modal-content__btn-close btn-reset js-modal-close graph-modal__close" aria-label="Close">
+          <svg class="modal-content__btn-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-content__title subtitle">Skillbox: 3D Modeling Courses</h3>
+        <p class="modal-content__text text">One page landing-test course project (CSS, Html, JS, bootstrap use)</p>
+        <p class="modal-content__text-descr text">Figma responsive layout (Perfect-Pixel)
+          <a class="modal-content__figma link-modal" target="_blank" href="https://www.figma.com/file/5B1NFPI9XVT7oXkd2jJMVZ/Сетки_ДЗ?node-id=0%3A1">Figma layout of Skillbox</a>
+        </p>
+        <a class="modal-content__link link-modal" href="https://brinza-anna.github.io/Skillbox.school" target="_blank">Skillbox site
+          <svg class="modal-content__link-icon">
+            <use xlink:href="img/sprite.svg#link-to"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container graph-modal__container" data-graph-target="projects-pic-4" role="dialog" aria-modal="true">
+    <div class="modal-content graph-modal__content">
+      <img class="modal-content__img" src="img/portfolio-qa.png" alt="portfolio picture" loading="lazy" width="500" height="500">
+      <div class="modal-content__descr">
+        <button class="modal-content__btn-close btn-reset js-modal-close graph-modal__close" aria-label="Close">
+          <svg class="modal-content__btn-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-content__title subtitle">Portfolio: QA-engeener</h3>
+        <p class="modal-content__text text">One page landing-test project (CSS, Html, JS, Gulp, Webpack, SCSS)</p>
+        <a class="modal-content__link link-modal" href="https://brinza-anna.github.io/QA-portfolio/" target="_blank">Portfolio: QA-engeener site
+          <svg class="modal-content__link-icon">
+            <use xlink:href="img/sprite.svg#link-to"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</body>
+
+</html>

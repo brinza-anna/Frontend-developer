@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--gray);
+
+  &__container {
+    padding: 10px;
+    border-bottom: 1px solid var(--gray);
+
+    @include flex-all-sb;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    color: var(--white);
+
+    @include flex-all-center;
+    @include mobile {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

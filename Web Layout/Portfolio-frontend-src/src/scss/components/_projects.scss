@@ -1,0 +1,136 @@
+.projects {
+  padding: 50px 0;
+  background-color: var(--gray-light);
+
+  @include mobile {
+    padding: 30px 0;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slider {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @include small-tablet {
+      height: 245px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__slide {
+    background-color: var(--gray);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: relative;
+      z-index: 1;
+      display: block;
+      box-sizing: border-box;
+      padding-top: calc(100% - 6px);
+      border: 3px solid transparent;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 25px;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url("../img/loop.svg");
+      background-repeat: no-repeat;
+      background-position: center top 46%;
+      background-clip: content-box;
+      background-size: 80px;
+      transition: opacity 0.5s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus:not(:hover):not(:active)::before {
+      border-color: var(--aqua);
+    }
+
+    &:active::before {
+      border-color: var(--rese);
+      background-color: rgba(#ed61b5, 0.5);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+min-height: 300px;
+    object-fit: fill;
+  }
+
+  &__nav-btn {
+    width: 60px;
+    height: 60px;
+    color: var(--dark);
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__nav-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: currentColor;
+    object-fit: cover;
+  }
+
+  &__pagination {
+    display: none;
+
+    @include mobile {
+      display: block;
+
+      --swiper-pagination-bullet-width: 15px;
+      --swiper-pagination-bullet-height: 15px;
+      --swiper-pagination-bullet-horizontal-gap: 8px;
+      --swiper-pagination-color: var(--aqua);
+    }
+  }
+}

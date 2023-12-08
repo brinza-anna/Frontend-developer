@@ -1,0 +1,15 @@
+.footer {
+  padding: 20px 0;
+  background-color: var(--dark);
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

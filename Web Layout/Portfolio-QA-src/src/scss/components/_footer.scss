@@ -1,0 +1,15 @@
+.footer {
+  padding: 10px 0;
+  background-color: var(--dark);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

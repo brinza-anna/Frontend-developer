@@ -1,0 +1,32 @@
+.link {
+  transition:  background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--accent-color);
+    transition:  background-color 0.3s ease;
+  }
+
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &--text {
+    transition: color .3s ease;
+
+    @include hover {
+     color: var(--accent-color);
+      transition:  background-color 0.3s ease, color .3s ease;
+    }
+
+    
+  &:focus {
+   color: var(--accent-color);
+   outline: none;
+  }
+  }
+}

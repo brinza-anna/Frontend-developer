@@ -1,0 +1,60 @@
+.tooltips {
+  margin-left: 5px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid var(--aqua);
+    width: 24px;
+    height: 24px;
+    background-color: var(--white);
+
+    &:focus-visible {
+      border: 2px solid red($color: #000000);
+    }
+}
+
+.tippy-box[data-theme~="about-tooltips"] {
+  background-color: var(--white);
+  color: var(--rose);
+  padding: 5px;
+}
+
+.tippy-content[data-theme~="about-tooltips"] {
+  border-radius: 0;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="top"]
+  > .tippy-arrow::before {
+  border-top-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  border-bottom-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="left"]
+  > .tippy-arrow::before {
+  border-left-color: var(--dark);
+}
+
+.tippy-box[data-theme~="about-tooltips"][data-placement^="right"]
+  > .tippy-arrow::before {
+  border-right-color: var(--dark);
+}
+
+
+
+// <div data-tippy-root>
+//   <div class="tippy-box" data-placement="top">
+//     <div class="tippy-backdrop"></div> <!-- animateFill: true -->
+//     <div class="tippy-arrow"></div> <!-- arrow: true -->
+//     <div class="tippy-content">
+
+

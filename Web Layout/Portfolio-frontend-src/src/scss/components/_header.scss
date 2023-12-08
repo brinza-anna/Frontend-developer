@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--dark);
+
+  &__container {
+
+    @include flex-all-sb;
+    padding: 24px 15px;
+    border-bottom: 1px solid var(--gray);
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+
+
+}

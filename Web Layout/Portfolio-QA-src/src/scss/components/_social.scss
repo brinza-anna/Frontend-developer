@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-bottom: 5px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--gray-light);
+    transition: color .3s ease;
+  }
+
+  &__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    fill: var(--gray-light);
+    object-fit: cover;
+
+    &--linkedin {
+      zoom: 1.17;
+            transform: translate(-2px,-3px);
+    }
+
+    &--github {
+    zoom: 2;
+    transform: translate(-2px, -3px);
+    }
+  }
+}
