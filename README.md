@@ -12,7 +12,7 @@ Gulp, Webpack, SCSS:
 <a href="https://brinza-anna.github.io/QA-portfolio/" target="_blank">Portfolio QA-engeneer(junior)</a><span> / </span>
 <a href="https://brinza-anna.github.io/Robo.school-gulp_use/" target="_blank">Robo Advanced training courses</a><span> / </span>
 <a href="https://brinza-anna.github.io/Frontend-Portfolio/" target="_blank">Portfolio Frontend-developer(junior)</a><br>
-Bootstrap: <a href="https://brinza-anna.github.io/Skillbox.school/" target="_blank">Skillbox 3D Modeling Courses</a><br>
+Bootstrap: <a href="https://brinza-anna.github.io/Skillbox.school-bootstrap_use" target="_blank">Skillbox 3D Modeling Courses</a><br>
 - **JavaScript(basic)**<br>
 **Final project:** CRM table of customers on JavaScript:
 <a href="https://drive.google.com/file/d/1v1Mi_XajyOH6xcITzwz-Ae7GiAYA8xkQ/view?usp=drive_link" target="_blank">Certificate-JavaScript.basic.png</a><span> / </span>
