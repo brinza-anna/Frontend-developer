@@ -21,8 +21,4 @@ Bootstrap: <a href="https://brinza-anna.github.io/Skillbox.school/" target="_bla
 **Here are some more practical works in JavaScript:**<br>
 <a href="https://brinza-anna.github.io/TO-DO-list_JavaScript/" target="_blank">TO DO list - site</a><span> / </span>
 <a href="https://brinza-anna.github.io/Find-pair_JavaScript/" target="_blank">Finde the pare - game</a><span> / </span>
-<a href="https://brinza-anna.github.io/add-form_for-db/" target="_blank">The form for adding students to the database</a>
-<br>
-
-
-
+<a href="https://brinza-anna.github.io/student-add-db_JavaScript" target="_blank">The form for adding students to the database</a><br>
